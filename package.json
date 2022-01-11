@@ -2,9 +2,12 @@
   "name": "weather-cli",
   "version": "1.0.0-alpha",
   "description": "CLI for getting weather",
-  "main": "index.js",
+  "main": "weather.js",
   "browser": "index.js",
-  "bin": "./index.js",
+  "bin": {
+    "weather": "./weather.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +18,9 @@
   ],
   "author": "Pavel Dubitskiy pullso.code@gmail.com",
   "license": "ISC",
-  "homepage": "http://pullso.github.io/"
+  "homepage": "http://pullso.github.io/",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "chalk": "^5.0.0"
+  }
 }
